@@ -1,0 +1,14 @@
+.board {
+  display: grid;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: 60px 60px 60px;
+}
+
+.card {
+  margin-left: 0px;
+  padding: 16px;
+}
+
+.nav-link {
+  cursor: pointer;
+}

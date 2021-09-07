@@ -1,0 +1,20 @@
+<!-- square.component.html
+
+Square-komponentin tehtÃ¤vÃ¤nÃ¤ on valuen (X tai 0) esittÃ¤minen. Sovelluslogiikka on Board -komponentissa -->
+
+<!-- Squaren templaatissa on tyylilogiikkaa eli ehdollinen tyyli. Napin tyyliÃ¤ vaihdetaan ehdon perusteella.
+    [ngClass] on konditionaalisen tyyliluokan merkintÃ¤. Konditionaalista tyyliÃ¤ kÃ¤ytetÃ¤Ã¤n seuraavasti:
+    <div [ngClass]="{'classname' : condition}"></div> 
+    
+    LisÃ¤tietoa Angularin ehdollisista tyyleistÃ¤:
+    https://www.angularjswiki.com/angular/how-to-add-a-class-based-on-condition-in-angular/ -->
+
+<!-- Jos napin indeksi on joku line-taulukossa olevista indekseistÃ¤, otetaan kÃ¤yttÃ¶Ã¶n red -tyyli-->
+
+<button
+  [ngClass]="{
+    red: index === line[0] || index === line[1] || index === line[2]
+  }"
+>
+  {{ value }}
+</button>
